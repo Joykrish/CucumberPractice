@@ -10,9 +10,10 @@ public class NewCarPage extends BasePage {
 
 	}
 
-	public BMWPage gotoBMW() {
+	public BMWPage gotoBMW() throws InterruptedException {
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		js.executeScript("window.scrollBy(0,150)", "");
+		Thread.sleep(10000);
 		click("BMW_Xpath");
 		return new BMWPage();
 	}
