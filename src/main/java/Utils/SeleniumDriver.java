@@ -35,10 +35,10 @@ public class SeleniumDriver {
 		if (config.getProperty("browser").equals("chrome")) {
 			ChromeOptions ops = new ChromeOptions();
 			ops.addArguments("--disable-notifications");
-String homeDirectory=System.getProperty("user.dir");
-String driverPath=homeDirectory +"\\chromedriver.exe";
-System.out.println("Home  Directory is  "+homeDirectory);
-System.setProperty("webdriver.chrome.driver", driverPath);
+			String homeDirectory = System.getProperty("user.dir");
+			String driverPath = homeDirectory + "\\chromedriver.exe";
+			System.out.println("Home  Directory is  " + homeDirectory);
+			System.setProperty("webdriver.chrome.driver", driverPath);
 //			System.setProperty("webdriver.chrome.driver",
 //					"D:\\jaykishor data\\eclipse-workspace\\CucumberPractice\\chromedriver.exe");
 			driver = new ChromeDriver(ops);

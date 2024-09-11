@@ -14,7 +14,7 @@ public class BasePage {
 
 	public static CarBase carbase;
 
-	public BasePage() {
+	public BasePage() { 
 		driver = SeleniumDriver.getDriver();
 		carbase = new CarBase();
 	}
@@ -59,13 +59,14 @@ public class BasePage {
 
 	}
 
-	public void type(String locator, String value) {
-
+	public void type(String locator, String value) throws InterruptedException {
+Thread.sleep(5000);
 		if (locator.endsWith("_Xpath")) {
-			driver.findElement(By.xpath(SeleniumDriver.or.getProperty(""))).sendKeys(value);
+		
+			driver.findElement(By.xpath(SeleniumDriver.or.getProperty(locator))).sendKeys(value);
 		}
 		if (locator.endsWith("_ID")) {
-			driver.findElement(By.id(SeleniumDriver.or.getProperty(""))).sendKeys(value);
+			driver.findElement(By.id(SeleniumDriver.or.getProperty(locator))).sendKeys(value);
 		}
 
 	}

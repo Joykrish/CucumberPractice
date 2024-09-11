@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>1/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>14/0/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sat Mar 30 09:11:20 IST 2024</td>
+<td>Started on:</td><td>Wed Sep 11 13:54:14 IST 2024</td>
 </tr>
-<tr><td>Total time:</td><td>37 seconds (37903 ms)</td>
+<tr><td>Total time:</td><td>89 seconds (89554 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,72 +67,6 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td><b>Attribute(s)</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='Runner.RunCucumber.runScenario()'><b>runScenario</b><br>Test class: Runner.RunCucumber<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Finding new cars", "Searching new Car"</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[contains(text(),&quot;Find New Cars&quot;)]&quot;}
-  (Session info: chrome=123.0.6312.86)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;DESKTOP-175K8UN&apos;, ip: &apos;192.168.150.67&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.5&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 123.0.6312.86, chrome: {chromedriverVersion: 123.0.6312.58 (6b4b19e9dfbb..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51612}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 1e959be197b3604f7cfeffa6b72d9145
-*** Element info: {Using=xpath, value=//div[contains(text(),&quot;Find New Cars&quot;)]}
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at page.Base.BasePage.click(BasePage.java:37)
-	at page.Object.HomePage.clickFindNewCar(HomePage.java:13)
-	at StepDefinations.Carwale.user_clicks_on_the_findnew_cars(Carwale.java:34)
-	at ✽.user clicks on the findnew Cars(file:///D:/jaykishor%20data/eclipse-workspace/CucumberPractice/src/test/java/Features/FindNewCar.feature:10)
-... Removed 5 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1157624710", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1157624710'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[contains(text(),&quot;Find New Cars&quot;)]&quot;}
-  (Session info: chrome=123.0.6312.86)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;DESKTOP-175K8UN&apos;, ip: &apos;192.168.150.67&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.5&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 123.0.6312.86, chrome: {chromedriverVersion: 123.0.6312.58 (6b4b19e9dfbb..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51612}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 1e959be197b3604f7cfeffa6b72d9145
-*** Element info: {Using=xpath, value=//div[contains(text(),&quot;Find New Cars&quot;)]}
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at page.Base.BasePage.click(BasePage.java:37)
-	at page.Object.HomePage.clickFindNewCar(HomePage.java:13)
-	at StepDefinations.Carwale.user_clicks_on_the_findnew_cars(Carwale.java:34)
-	at ✽.user clicks on the findnew Cars(file:///D:/jaykishor%20data/eclipse-workspace/CucumberPractice/src/test/java/Features/FindNewCar.feature:10)
-</pre></div></td>
-<td>17</td>
-<td>Runner.RunCucumber@6c1a5b54</td></tr>
-</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -142,10 +76,75 @@ Session ID: 1e959be197b3604f7cfeffa6b72d9145
 <td><b>Instance</b></td>
 </tr>
 <tr>
+<td title='Runner.RunCucumber.runScenario()'><b>runScenario</b><br>Test class: Runner.RunCucumber<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Login to the facebook website as a user In Production", "Login Feature - Productin Environment"</td>
+<td></td>
+<td>1</td>
+<td>Runner.RunCucumber@5b7a5baa</td></tr>
+<tr>
+<td title='Runner.RunCucumber.runScenario()'><b>runScenario</b><br>Test class: Runner.RunCucumber<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify user id in the Ameriacan Express login Page", "Title of your feature"</td>
+<td></td>
+<td>30</td>
+<td>Runner.RunCucumber@5b7a5baa</td></tr>
+<tr>
+<td title='Runner.RunCucumber.runScenario()'><b>runScenario</b><br>Test class: Runner.RunCucumber<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Login to the facebook website as a Invalid user", "Login Staging Feature"</td>
+<td></td>
+<td>1</td>
+<td>Runner.RunCucumber@5b7a5baa</td></tr>
+<tr>
+<td title='Runner.RunCucumber.runScenario()'><b>runScenario</b><br>Test class: Runner.RunCucumber<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Login to the facebook website as a user", "Login Feature"</td>
+<td></td>
+<td>2</td>
+<td>Runner.RunCucumber@5b7a5baa</td></tr>
+<tr>
+<td title='Runner.RunCucumber.runScenario()'><b>runScenario</b><br>Test class: Runner.RunCucumber<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Login to the facebook website as a user In Production", "Login Feature - Productin Environment"</td>
+<td></td>
+<td>1</td>
+<td>Runner.RunCucumber@5b7a5baa</td></tr>
+<tr>
+<td title='Runner.RunCucumber.runScenario()'><b>runScenario</b><br>Test class: Runner.RunCucumber<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Login to the facebook website as a user In Production", "Login Feature - Productin Environment"</td>
+<td></td>
+<td>1</td>
+<td>Runner.RunCucumber@5b7a5baa</td></tr>
+<tr>
 <td title='Runner.RunCucumber.runScenario()'><b>runScenario</b><br>Test class: Runner.RunCucumber<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Finding new cars", "Searching new Car"</td>
 <td></td>
-<td>18</td>
-<td>Runner.RunCucumber@6c1a5b54</td></tr>
+<td>20</td>
+<td>Runner.RunCucumber@5b7a5baa</td></tr>
+<tr>
+<td title='Runner.RunCucumber.runScenario()'><b>runScenario</b><br>Test class: Runner.RunCucumber<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Login to the facebook website as a valid user", "Login Staging Feature"</td>
+<td></td>
+<td>1</td>
+<td>Runner.RunCucumber@5b7a5baa</td></tr>
+<tr>
+<td title='Runner.RunCucumber.runScenario()'><b>runScenario</b><br>Test class: Runner.RunCucumber<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Login to the facebook website as a user", "Login Feature"</td>
+<td></td>
+<td>1</td>
+<td>Runner.RunCucumber@5b7a5baa</td></tr>
+<tr>
+<td title='Runner.RunCucumber.runScenario()'><b>runScenario</b><br>Test class: Runner.RunCucumber<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Login to the facebook website as a user In Production", "Login Feature - Productin Environment"</td>
+<td></td>
+<td>1</td>
+<td>Runner.RunCucumber@5b7a5baa</td></tr>
+<tr>
+<td title='Runner.RunCucumber.runScenario()'><b>runScenario</b><br>Test class: Runner.RunCucumber<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Login to the facebook website as a user In Production", "Login Feature - Productin Environment"</td>
+<td></td>
+<td>1</td>
+<td>Runner.RunCucumber@5b7a5baa</td></tr>
+<tr>
+<td title='Runner.RunCucumber.runScenario()'><b>runScenario</b><br>Test class: Runner.RunCucumber<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Login to the facebook website as a user", "Login Feature"</td>
+<td></td>
+<td>1</td>
+<td>Runner.RunCucumber@5b7a5baa</td></tr>
+<tr>
+<td title='Runner.RunCucumber.runScenario()'><b>runScenario</b><br>Test class: Runner.RunCucumber<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Login to the facebook website as a user", "Login Feature"</td>
+<td></td>
+<td>1</td>
+<td>Runner.RunCucumber@5b7a5baa</td></tr>
+<tr>
+<td title='Runner.RunCucumber.runScenario()'><b>runScenario</b><br>Test class: Runner.RunCucumber<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Finding new cars", "Searching new Car"</td>
+<td></td>
+<td>17</td>
+<td>Runner.RunCucumber@5b7a5baa</td></tr>
 </table><p>
 </body>
 </html>

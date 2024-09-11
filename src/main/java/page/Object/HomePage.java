@@ -4,6 +4,8 @@ import Utils.SeleniumDriver;
 import page.Base.BasePage;
 
 public class HomePage extends BasePage {
+	
+	
 
 	public void mouseOverNewCar() {
 		mouseOver("NewCars_Xpath");

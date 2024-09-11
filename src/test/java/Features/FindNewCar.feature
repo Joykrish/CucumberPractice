@@ -15,3 +15,11 @@ Feature: Searching new Car
       | carBrand | carTitle    |
       | Toyota   | Toyota Cars |
       | BMW      | BMW Cars    |
+
+      
+      
+       #Given I navigate to Carwale website  //precondition needs to be true before execution starts
+      # When I click on Menu button of Toyoto //Actions I need to perform
+       #And I click on the Homepage URL // can be used as conjunction with additional step
+       #Then I should redicted to homePage // expected result or validation
+       
