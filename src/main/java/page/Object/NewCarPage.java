@@ -16,8 +16,8 @@ public class NewCarPage extends BasePage {
 	}
 
 	public BMWPage gotoBMW() throws InterruptedException {
-		JavascriptExecutor js = (JavascriptExecutor) driver;
-		js.executeScript("window.scrollBy(0,150)", "");
+//		JavascriptExecutor js = (JavascriptExecutor) driver;
+//		js.executeScript("window.scrollBy(0,150)", "");
 		WebDriverWait wait = new WebDriverWait(driver, 10);
 		WebElement we=wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath(SeleniumDriver.or.getProperty("BMW_Xpath"))));
 		we.click();
@@ -25,8 +25,8 @@ public class NewCarPage extends BasePage {
 	}
 
 	public ToyotaPage gotoToyota() {
-		JavascriptExecutor js = (JavascriptExecutor) driver;
-		js.executeScript("window.scrollBy(0,150)", "");
+//		JavascriptExecutor js = (JavascriptExecutor) driver;
+//		js.executeScript("window.scrollBy(0,150)", "");
 		click("toyota_Xpath");
 		return new ToyotaPage();
 	}
