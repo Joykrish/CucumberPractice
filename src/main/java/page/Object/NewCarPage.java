@@ -19,7 +19,7 @@ public class NewCarPage extends BasePage {
 //		JavascriptExecutor js = (JavascriptExecutor) driver;
 //		js.executeScript("window.scrollBy(0,150)", "");
 		
-		Thread.sleep(1000);
+		Thread.sleep(30000);
 		WebDriverWait wait = new WebDriverWait(driver, 50);
 		WebElement we=wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath(SeleniumDriver.or.getProperty("BMW_Xpath"))));
 		we.click();
