@@ -19,16 +19,21 @@ public class NewCarPage extends BasePage {
 //		JavascriptExecutor js = (JavascriptExecutor) driver;
 //		js.executeScript("window.scrollBy(0,150)", "");
 		
-		Thread.sleep(30000);
-		WebDriverWait wait = new WebDriverWait(driver, 50);
-		WebElement we=wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath(SeleniumDriver.or.getProperty("BMW_Xpath"))));
-		we.click();
+		Thread.sleep(10000);
+		
+		WebElement element = driver.findElement(By.xpath(SeleniumDriver.or.getProperty("BMW_Xpath")));
+		JavascriptExecutor executor = (JavascriptExecutor)driver;
+		executor.executeScript("arguments[0].click();", element);
+//		WebDriverWait wait = new WebDriverWait(driver, 50);
+//		WebElement we=wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath(SeleniumDriver.or.getProperty("BMW_Xpath"))));
+//		we.click();
 		return new BMWPage();
 	}
 
 	public ToyotaPage gotoToyota() {
 //		JavascriptExecutor js = (JavascriptExecutor) driver;
 //		js.executeScript("window.scrollBy(0,150)", "");
+		
 		click("toyota_Xpath");
 		return new ToyotaPage();
 	}
