@@ -37,7 +37,7 @@ agent any
   post {
         always {
             
-            archiveArtifacts artifacts: 'target/cucumber-reports/*.html', allowEmptyArchive: true
+            archiveArtifacts artifacts: 'target/cucumber-reports/extent.html', allowEmptyArchive: true
             
             
             publishHTML (target: [
