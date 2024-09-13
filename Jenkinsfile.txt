@@ -34,4 +34,19 @@ agent any
       }
     }
   }
+  post {
+        always {
+            
+            archiveArtifacts artifacts: '**/target/cucumber-reports/*.html', allowEmptyArchive: true
+            
+            
+            publishHTML (target: [
+                reportDir: 'D:\jaykishor data\eclipse-workspace\CucumberPractice\target\cucumber-reports',
+                reportFiles: 'extent.html',
+                reportName: 'Extent Report'
+            ])
+        }
+    }
+  
+  
 }
