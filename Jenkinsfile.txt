@@ -37,7 +37,7 @@ agent any
   post {
         always {
             
-            archiveArtifacts artifacts: D:/jaykishor data/eclipse-workspace/CucumberPractice/target/cucumber-reports*.html', allowEmptyArchive: true
+            archiveArtifacts artifacts: 'D:/jaykishor data/eclipse-workspace/CucumberPractice/target/cucumber-reports*.html', allowEmptyArchive: true
             
             
             publishHTML (target: [
